@@ -69,3 +69,7 @@ table {
     margin-left: 9px;
     margin-top: 25px;
 }
+
+.icons :hover{
+    cursor: pointer;
+}

@@ -56,8 +56,8 @@ const Details = ({ setAirportDetails }) => {
           <tbody>
             {airportDetails.map((item) => {
               return (
-                <tr onClick={() => setAirportDetails(item)}>
-                  <td className="table-data">
+                <tr>
+                  <td className="table-data" onClick={() => setAirportDetails(item)}>
                     <Checkbox className="checkbox">
                       <h5>{item.name}</h5>
                     </Checkbox>
@@ -72,7 +72,7 @@ const Details = ({ setAirportDetails }) => {
                     <h5>{item.terminals}</h5>
                   </td>
                   <div>
-                    <MdModeEditOutline className="icons" />
+                    <MdModeEditOutline className="icons" onClick={() => setAirportDetails(item)}/>
                     <RiDeleteBin6Fill className="icons" />
                   </div>
                 </tr>
