@@ -1,36 +1,28 @@
 import { React, useState } from "react";
-import { FaAngleRight } from "react-icons/fa6";
 import { TfiLayoutMenuSeparated } from "react-icons/tfi";
 import {
-  Menu,
-  MenuTrigger,
-  ContextualHelpTrigger,
   FileTrigger,
   Switch,
   TextArea,
-  Text,
 } from "@adobe/react-spectrum";
 
 import { Button } from "@adobe/react-spectrum";
 import {
   Item as NewItem,
   TabList,
-  TabPanels,
   Tabs,
 } from "@adobe/react-spectrum";
-import { Picker, Item as DropItem, Section } from "@adobe/react-spectrum";
+import { Picker, Item as DropItem } from "@adobe/react-spectrum";
 
 import { Breadcrumbs, Item, TextField } from "@adobe/react-spectrum";
 import "./airportDetails.css";
 import {
   ActionButton,
-  Button as newButton,
   ButtonGroup,
   Content,
   Dialog,
   DialogTrigger,
   Divider,
-  Header,
   Heading,
   Text as Text1,
 } from "@adobe/react-spectrum";
@@ -60,7 +52,7 @@ const AirportDetails = ({ requiredDetails, setAirportDetails }) => {
         <div className="terminal-container">
           <img
             src="https://s3-alpha-sig.figma.com/img/e6fa/4d5a/9fa67efdaff0836c6b48500e00b4f1f6?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LdmYr5MqACzkzoqBJySPUXr-BgPcR0Tv3kWP7smBJk--CfbuhTMUeL~FMaGC4SN5ZEuVpAtG9X3pq7V-lFONPEgYXtiQgjpDLVicqokdVgKAG17B6PBljOTgqwDlqjkT91uZcWjHC9vS2~9OCxnUzyLBFTAMwIWADc3yRpeqvV4g4u7k1STFHxq~Nk-vsBw2sXcsVHlMpoa6DT4rTAlmpAlBEQvkmCJkxtQLTPRQ-SXMckrjKDHOo8b~Kgj4tGQ87tTwRTYzx7iSX~K8LxAT9I6ADjFT~SLM-aa0qQXZLomWgc3JLzJmeJ1JIMhF~b2kyqbQfDjrjAyzRqrkIZomYw__"
-            alt="image"
+            alt="terminal-image"
             className="image"
           />
           <div>
@@ -78,7 +70,7 @@ const AirportDetails = ({ requiredDetails, setAirportDetails }) => {
         <div className="terminal-container">
           <img
             src="https://s3-alpha-sig.figma.com/img/e6fa/4d5a/9fa67efdaff0836c6b48500e00b4f1f6?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LdmYr5MqACzkzoqBJySPUXr-BgPcR0Tv3kWP7smBJk--CfbuhTMUeL~FMaGC4SN5ZEuVpAtG9X3pq7V-lFONPEgYXtiQgjpDLVicqokdVgKAG17B6PBljOTgqwDlqjkT91uZcWjHC9vS2~9OCxnUzyLBFTAMwIWADc3yRpeqvV4g4u7k1STFHxq~Nk-vsBw2sXcsVHlMpoa6DT4rTAlmpAlBEQvkmCJkxtQLTPRQ-SXMckrjKDHOo8b~Kgj4tGQ87tTwRTYzx7iSX~K8LxAT9I6ADjFT~SLM-aa0qQXZLomWgc3JLzJmeJ1JIMhF~b2kyqbQfDjrjAyzRqrkIZomYw__"
-            alt="image"
+            alt="terminal-image"
             className="image"
           />
           <div>
