@@ -35,8 +35,7 @@ const Details = ({ setAirportDetails }) => {
       <div className="details-holder">
         <div className="airports-list">
           <h3>Airports</h3>
-          {/* @ts-ignore */}
-          <Button variant="primary" staticColor="black" style="fill" >
+          <Button variant="primary" staticColor="black" >
             <Text>+ Add new</Text>
           </Button>
         </div>
