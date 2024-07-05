@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  position: sticky;
+  background-color: white;
+  
+}
+.header-body {
+  height: 60px;
+  gap: 0px;
+  opacity: 0px;
+}

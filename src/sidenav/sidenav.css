@@ -1,0 +1,38 @@
+/* Sidenav styles */
+.holder {
+    height: 100%;
+    background-color: white;
+    
+  }
+  .sidenav {
+    width: 250px;
+    height: 100vh;
+    top: 90px;
+    left: 0;
+    
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .icon-holder {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-top: 10px; /* Adjust as needed */
+  }
+  
+  .icon-holder p {
+    margin-left: 10px; /* Add spacing between icon and text */
+  }
+  
+  .icon {
+    font-size: 24px; /* Adjust icon size */
+    margin-left: 0px; /* Add spacing between icon and text */
+    
+  }
+
+
+  

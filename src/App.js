@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./header/Header";
+import SideNav from "./sidenav/SideNav";
+import Details from "./details/Details";
+import { defaultTheme, Provider } from "@adobe/react-spectrum";
+import { useState } from "react";
+import AirportDetails from "./airportDetails/AirportDetails";
 
 function App() {
+  const [airportDetails, setAirportDetails] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider theme={defaultTheme}>
+      <Header />
+      <div className="holder">
+        <SideNav />
+        {airportDetails && airportDetails.name ? (
+          <AirportDetails
+            requiredDetails={airportDetails}
+            setAirportDetails={setAirportDetails}
+          />
+        ) : (
+          <Details setAirportDetails={setAirportDetails} />
+        )}
+      </div>
+    </Provider>
   );
 }
 
